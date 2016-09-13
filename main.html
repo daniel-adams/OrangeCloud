@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>OrangeCloud Enhancer</title>
+    <link rel="shortcut icon" type="image/png" href="/images/oce-icon-64.png"/>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/sdk-3.1.2.js"></script>
+    <script src="js/FileSaver.min.js"></script>
+  </head>
+  <body>
+    <div class="placeholder loading">
+        <div class="in-progress">
+          <i class="fa fa-circle-o-notch fa-spin fa-5x fa-fw" aria-hidden="true"></i>
+          <div></div>
+          <p class="text">Loading</p>
+        </div>
+        <div class="failed" hidden>
+          <i class="fa fa-chain-broken fa-5x" aria-hidden="true"></i>
+          <div></div>
+          <p class="text">An error occured during loading :(</p>
+        </div>
+        <div class="nothing" hidden>
+          <i class="fa fa-file-o fa-5x" aria-hidden="true"></i>
+          <div></div>
+          <p class="text">There are no tracks to be displayed!</p>
+        </div>
+        <div class="downloaded" hidden>
+          <i class="fa fa-check-circle-o fa-5x" aria-hidden="true"></i>
+          <div></div>
+          <p class="text">Backup downloaded!</p>
+          <p class="subsubtext">The backup is in the format of a JSON text file. It contains all the SoundCloud metadata (including title and artist) of each track that was retrieved, and can be read with any text editor.</p>
+        </div>
+    </div>
+    <div class="nav-bar header">
+      <span class="fa fa-external-link-square" aria-hidden="true"></span>
+      <a id="back-button" href="https://soundcloud.com">Go back to Soundcloud</a>
+    </div>
+    <div class="results">
+      <div class="results-list"></div>
+      <button id="download-button" hidden>Download a backup</button>
+    </div>
+    <div class="nav-bar footer">
+      <button id="next-page">Load more tracks</i></button>
+      <a href="https://soundcloud.com">
+        <img class="sndcld-logo" src="images/powered_by_small.png">
+      </a>
+    </div>
+    <div class="popup-notice end-of-tracks" hidden>You've reached the end of this collection</div>
+    <script src="js/own_likes_sort.js"></script>
+    <script src="js/user_tracks.js"></script>
+    <script src="js/user_likes.js"></script>
+    <script src="js/user_set_spotlight.js"></script>
+    <script src="js/own_likes_backup.js"></script>
+    <script src="js/own_likes_sort.js"></script>
+    <script src="js/user_set_backup.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+@media screen and (max-width: 240px) {
+    div.nav-bar.footer img.sndcld-logo {
+        visibility: hidden;
+    }
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  /*min-width: 380px;*/
+  background-color: white;
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+}
+
+div.nav-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #c4f2ff;
+}
+
+div.nav-bar.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+div.nav-bar.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.fa-external-link-square {
+    margin-top: 18px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+#back-button {
+    display: inline-block;
+    border: none;
+    padding: 1px 5px 1px 5px;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s;
+}
+
+#back-button:hover {
+    background-color: #62dbff;
+}
+
+div.results {
+    min-height: calc(100vh - 150px);
+    margin-top: 50px;
+    padding: 25px;
+    font-size: 10px;
+}
+
+.loading {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.6;
+}
+
+.loading > div.in-progress {
+    position: fixed;
+    top: calc(50% - 62px);
+    left: calc(50% - 35px);
+}
+
+.loading > div.failed {
+    position: fixed;
+    top: calc(50% - 62px);
+    left: calc(50% - 150px);
+}
+
+.loading > div.nothing {
+    position: fixed;
+    top: calc(50% - 62px);
+    left: calc(50% - 157px);
+}
+
+.loading > div.downloaded {
+    position: fixed;
+    top: calc(50% - 97px);
+    left: calc(50% - 125px);
+    max-width: 250px;
+}
+
+.loading > div > i {
+    width: 100%;
+    text-align: center;
+    color: dimgray;
+}
+
+.loading > div > .text {
+    text-align: center;
+    color: dimgray;
+    font-size: 18px;
+}
+
+.loading > div > .subtext {
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+}
+
+.loading > div > .subsubtext {
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+
+#next-page {
+    width: 200px;
+    height: 100%;
+    max-width: calc(100% - 125px);
+    min-width: 100px;
+    background-color: #ffd2c4;
+    font-size: 15px;
+    color: black;
+    border: none;
+    -webkit-transition: background-color 0.5s;
+}
+
+#next-page:hover {
+    background-color: #ff8662;
+    cursor: pointer;
+}
+
+#download-button {
+    position: fixed;
+    top: calc(50% - 38px);
+    left: calc(50% - 125px);
+    width: 250px;
+    height: 76px;
+    background-color: #ffd2c4;
+    font-size: 15px;
+    color: black;
+    border: none;
+    -webkit-transition: background-color 0.5s;
+}
+
+#download-button:hover {
+    background-color: #ff8662;
+    cursor: pointer;
+}
+
+.loading > div.in-progress {
+    position: fixed;
+    top: calc(50% - 62px);
+    left: calc(50% - 35px);
+}
+
+div.end-of-tracks {
+    position: fixed;
+    bottom: 100px;
+    left: calc(50% - 148px);
+    background-color: gray;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 15px;
+    z-index: 10;
+    -webkit-transition: 0.5s;
+}
+
+div.nav-bar.footer img.sndcld-logo {
+    position: absolute;
+    opacity: 0.4;
+    -webkit-transition: opacity 0.5s;
+    top: 10px;
+    right: 10px;
+}
+
+div.nav-bar.footer img.sndcld-logo:hover {
+    opacity: 1.0;
+    cursor:pointer;
+}
+
+div.nav-bar.footer i {
+    position: absolute;
+    color: dimgray;
+    -webkit-transition: color 0.5s;
+    top: 10px;
+    right: 10px;
+}
+
+div.nav-bar.footer i:hover {
+    color: black;
+    cursor:pointer;
+}

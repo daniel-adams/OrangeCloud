@@ -1,0 +1,77 @@
+body {
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  margin: 0;
+  background-color: white;
+  width: 300px;
+}
+
+div.popup-top-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #c4f2ff;
+  padding-top: 10px;
+}
+
+.popup-top-bar .text {
+  color: dimgray;
+  font-size: 13px;
+}
+
+.show-options {
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  width: 20px;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: background-color 0.5s;
+}
+
+.show-options:hover {
+  background-color: #62dbff;
+  cursor: pointer;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-item {
+  font-size: 15px;
+  background-color: #ffd2c4;
+  color: black;
+  width: 100%;
+  padding: 30px;
+  border: none;
+  -webkit-transition: background-color 0.5s, visibility 0.5s;
+}
+
+button.menu-item:hover {
+    background-color: #ff8662;
+    cursor: pointer;
+}
+
+.menu-item.options {
+  background-color: #c4d4ff;
+  text-decoration: none;
+}
+
+.menu-item.options.tooltip > p {
+  font-size: 13px;
+  width: 240px;
+  text-align: center;
+}
+
+button.menu-item.options:hover {
+  background-color: #628dff;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.fa-cloud {
+  color: dimgray;
+  margin-left: 10px;
+}
